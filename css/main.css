@@ -1,0 +1,229 @@
+@charset "utf-8";
+
+body{
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    margin: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.hImg{
+    display: none;
+}
+
+.h-logo{
+    margin-left: 10px;
+}
+
+.hd-menu{
+    display: flex;
+    flex-direction: row;  
+}
+
+.header{
+    position: relative;
+}
+.nav-menu{       
+    padding: 0; 
+    width: 53%; 
+    position: absolute;
+    right: 0;  
+}
+
+.nav-menu .menu{
+    position: absolute;
+    right: 0; 
+}
+
+.nav-menu .menu .menu-list{
+    display: inline-block;
+    margin: 30px 5px 0px 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+   
+}
+
+.nav-menu .menu .menu-list:first-child a{
+    color: #7fcbc9;
+}
+
+.nav-menu .menu .menu-list a{
+    color: black;
+    transition: .5s ease;
+    -webkit-transition: .51s ease;
+    -moz-transition: .51s ease;
+    -ms-transition: .51s ease;
+    -o-transition: .51s ease;
+}
+
+.nav-menu .menu .menu-list a:hover{
+    color: #7fcbc9;
+}
+
+.nav-menu .menu .menu-list:last-child{
+    margin-top: 10px;
+}
+
+.carousel{
+   width: 100%;
+   object-fit: contain;
+   overflow-y: hidden;
+}
+
+.carousel .carousel-slide figure img{
+    width: 100%;
+}
+
+.carousel .carousel-slide{
+    white-space: nowrap;
+}
+
+.carousel .carousel-slide figure{
+    display: inline-block;
+}
+
+.s-colecao .sd-colecao{
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 100px 30px ;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+.s-colecao  .sa-colecao{
+    width: 100%;
+    padding: 0 100px;
+    margin-left: -100px;
+    background-color: rgba(255, 255, 255, .7);
+}
+.s-colecao .sd-colecao:nth-child(1){
+    background: url(../image/inicio/produto-praia-03.jpg);
+    background-size: cover;
+}
+
+.s-colecao .sd-colecao:nth-child(2){
+    background: url(../image/inicio/produto-urbana-04.jpg);
+    background-size: cover;
+}
+
+.s-colecao .sd-colecao:nth-child(3){
+    background: url(../image/inicio/produto-urbana-11.jpg);
+    background-size: cover;
+}
+
+.dv-pro{
+    width: 80%;
+    text-align: center;
+    padding: 50px;    
+}
+
+.dv-pro p:first-child{
+    margin-bottom: -15px;
+}
+
+.dv-pro p{
+    font-size: 15.5px;
+}
+
+.dv-pro hr{
+    width: 50px;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 30px;
+}
+
+.s-prod{    
+    white-space: nowrap;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 20px;
+    overflow: auto;
+    position: relative;
+}
+
+.s-prod h3{
+   margin-bottom: -10px;
+   font-size: 15px;
+}
+
+
+.sa-prod{
+    width: 100%;
+    display: inline-block;
+}
+
+.sa-prod img{
+    object-fit: cover;
+
+}
+.btn{
+    background-color: #7fcbc9;
+    padding: 8px 17px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.btn:hover{
+    background-color: #2baaa6ef;
+}
+
+.buttons{
+   text-align: center;
+}
+
+.buttons .prev,
+.buttons .next{
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+ span{
+    letter-spacing: 20px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid;
+    display: inline-block;
+    border-radius:50% ;
+    -webkit-border-radius:50% ;
+    -moz-border-radius:50% ;
+    -ms-border-radius:50% ;
+    -o-border-radius:50% ;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.buttons span:nth-child(2):hover,
+.buttons span:nth-child(3):hover
+{
+  background-color: black;
+  cursor: pointer;
+}
+
+.btnT{
+    padding: 20px 30px;
+}
+
+.d-bt{    
+    padding: 100px;
+    text-align: center;
+    box-sizing: border-box;
+}
