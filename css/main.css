@@ -6,6 +6,7 @@ body{
     padding: 0;
     line-height: 1.5;
     letter-spacing: 1px;
+
 }
 
 *{
@@ -262,7 +263,6 @@ h1, h2, h3, h4, h5, h6{
     background-size: 250%;
     background-position: -100px -120px;
     padding: 150px 20px;    
-    
 }
 
 
@@ -290,7 +290,9 @@ h1, h2, h3, h4, h5, h6{
     padding: 20px 10px;
     box-sizing: border-box;
     border: 10px solid rgba(167, 233, 231, 0.8);
+
      box-sizing: border-box;
+
 }
 
 .dv-ftd{
@@ -333,7 +335,10 @@ h1, h2, h3, h4, h5, h6{
     display: inline-block;
 }
 
-.dv-servimg{
+
+
+.dv-servf{
+
     background-color: white;
     width: 90%;
     margin: 20px auto;
@@ -345,6 +350,7 @@ h1, h2, h3, h4, h5, h6{
     align-items: center;
 }
 
+<<<<<<< HEAD
 .dv-servimg div:last-child{
     margin-left: 30px;
 }
@@ -405,4 +411,7 @@ footer div{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
+}
+.dv-servf div:last-child{
+    margin-left: 30px;
 }
