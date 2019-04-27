@@ -15,15 +15,15 @@
 </head>
 <body>
     <header class="header">
-        <img src="image/inicio/icone-envio.png" alt="Ícone de carro de entrega" class="hImg">
-        <img src="image/inicio/icone-garantia.png" alt="Ícone de carro de entrega" class="hImg">
+        <img src="image/inicio/icone-envio.png" alt="Ícone de carro de entrega" class="hImg" style=" display: none;">
+        <img src="image/inicio/icone-garantia.png" alt="Ícone de carro de entrega" class="hImg" style=" display: none;">
 
         <div class="hd-menu">
             <h1><a href="index.html" class="h-logo">Opal Cloting</a></h1>
     
             <nav class="nav-menu">
                 <ul class="menu">
-                    <li class="menu-list"><a href="index.html">Início</a></li>
+                    <li class="menu-list"><a href="index.html" style="color: #7fcbc9">Início</a></li>
                     <li class="menu-list"><a href="produtos.html">Produtos</a></li>
                     <li class="menu-list"><a href="compras.html">Minha Conta</a></li>
                 </ul>
@@ -130,11 +130,8 @@
         </section>
         <div class="buttons">
                 <button class="prev"><i class="fas fa-angle-left"></i></button>
-               <!-- <span><i class="far fa-circle"></i></span>
-                <span><i class="far fa-circle"></i> </span> -->
-
-                <span></span>
-                <span></span>
+                <span class="sel"></span>
+                <span class="sel"></span>
                 <button class="next"><i class="fas fa-angle-right"></i></button>
                 
             </div>
@@ -143,35 +140,36 @@
             <a href="#" class="btn btnT">Todos os produtos</a>
         </div>
 
-        <section>
-            <div>
-                <article>
+        <section class="s-ultnov">
+            <div class="sd-ultnov">
+                <article class=" sa-ultnovd">
                     <h2>A temporada de descontos já está chegando, confira</h2>
                     <p>Vestibulum libero mi, vehicula sit amet varius faucibus dignissim.</p>
                 </article>
 
             </div>
 
-            <article>
-             <h2>Quem é a opal cloting</h2>
- 
+            <article class="sa-ultnov">
+             <h3>Quem é a </h3>
+             <h3>opal cloting</h3>
+                <hr>
                 <p>Mauris laoreet dolor vitae libero tristique, a consectetur ipsum venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum placerat libero a nibh faucibus, cursus placerat mi dictum. Aliquam interdum quam id metus rhoncus rhoncus. Nulla in volutpat felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In interdum eu nisi et feugiat.</p>
 
                 <p>Nam placerat purus ac velit porttitor, in sodales erat lobortis. Fusce ipsum nibh, ultrices non scelerisque ac, euismod nec justo. In viverra gravida magna, quis eleifend orci dignissim vel. Sed id odio at velit accumsan consequat. In at sodales risus. Aenean auctor orci non arcu ultrices, in luctus felis ultrices. Quisque erat diam, pulvinar eu gravida id, imperdiet ut mi. Donec non ex ut mi porta consectetur. Quisque vel sem dapibus, varius erat vitae, venenatis elit.</p>
 
-                <a href="#">Entre em contato</a>
+                <a href="#" class="btn">Entre em contato</a>
             </article>
         </section>
 
-        <div>
+        <div class="dv-ftd">
             <h2>Desconto</h2>
             <h2>Todas as semanas</h2>
             
             <p>Ut ipsum libero, aliquet quis arcu quis, cursus congue risus vestibulum finibus sem pretium.</p>
         </div>
 
-        <div class="slide">
-            <div class="slideshow">
+        <div class="dv-slide">
+            <div class="dv-slideshow">
                 <figure><img src="image/inicio/logotipo-01.png" alt="logotipo 01"> </figure>
                 <figure><img src="image/inicio/logotipo-02.png" alt="logotipo 02"> </figure>
                 <figure><img src="image/inicio/logotipo-03.png" alt="logotipo 03"> </figure>
@@ -182,43 +180,63 @@
             </div>
         </div>
 
-        <div>
-            <h2>Cuidamos de tudo</h2>
-            <h2>Para a sua total comodidade</h2>
-
+        <div class="dv-serv">
+            <h3>Cuidamos de tudo</h3>
+            <h3>Para a sua total comodidade</h3>
+                <hr>
             <p>Ut ipsum libero, aliquet quis arcu quis, cursus congue risus vestibulum finibus sem pretium.</p>
 
-            <div>
-                <img src="image/inicio/icone-enviogarantido.png" alt="Ícone de envio">
-                 <h3>Enviamos para qualquer lugar</h3> 
-                 <p>eceba sua encomenda onde quer que você esteja, basta aguardá-la!</p> 
-            </div>
+            <div class="dv-servimgs">
+                <div class="dv-servimg">
+                    <div>
+                        <img src="image/inicio/icone-enviogarantido.png" alt="Ícone de envio">
+                    </div>
+                     
+                    <div>
+                        <h3>Enviamos para qualquer lugar</h3> 
+                         <p>Receba sua encomenda onde quer que você esteja, basta aguardá-la!</p> 
+                    </div>
+                </div>
+    
+                <div class="dv-servimg">
+                    <div>
+                        
+                        <img src="image/inicio/icone-pagamentogarantido.png" alt="Ícone de pagamento"> 
+                    </div>
+    
+                    <div>
+                        <h3>Pagamento 100% seguro</h3> 
+                        <p>Utilizamos um sistema de pagamentos totalmente seguro e credenciado!</p> 
+                    </div>
+                </div>
+    
+                <div class="dv-servimg">
+                   <div>
+                        <img src="image/inicio/icone-atendimento.png" alt="Ícone de atendimento"> 
+                       
+                   </div> 
+                   <div>
+                       <h3>Suporte 24/7</h3> 
+                       <p>Tenha a ajuda de um atendente durante sua compra, à qualquer hora!</p> 
+                   </div>
+                </div>
 
-            <div>
-                <img src="image/inicio/icone-pagamentogarantido.png" alt="Ícone de pagamento"> 
-                <h3>Pagamento 100% seguro</h3> 
-                <p>Utilizamos um sistema de pagamentos totalmente seguro e credenciado!</p> 
-            </div>
-
-            <div>
-                <img src="image/inicio/icone-atendimento.png" alt="Ícone de atendimento"> 
-                <h3>Suporte 24/7</h3> 
-                <p>Tenha a ajuda de um atendente durante sua compra, à qualquer hora!</p> 
-            </div>
-
+            </p>   
         </div>
     </main>
-    <footer>
+    <footer class="footer">
          <div class="footer-logo">
                 <h1><a href="index.html">Opal Cloting</a></h1>
-        </div>   
 
-        <div>
+                 <div>
             <h5>UMA MENSAGEM</h5>
             <p>Mauris porttitor nulla nunc, sit amet interdum sapien efficitur sed. Fusce viverra eros massa. Curabitur hendrerit risus vitae interdum rhoncus. Aenean vel nisi convallis enim vehicula venenatis.</p>
         <div>
+        </div>   
 
-        <div>
+       
+
+         <div>
             <h5>Obtenha mais para seu negócio</h5>
             <p><a href="#">Início</a></p>
             <p><a href="#">Produtos</a></p>
@@ -229,9 +247,9 @@
             <h5>Funcionamento Loja Física</h5>
             <p>ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
 
-            <p><span>Seg. à sex.</span> de 8:30 às 18:30</p>
-            <p><span>Sábado</span> de 9:00 às 14:00</p>
-            <p><span>Domingo</span> Fechado</p>
+            <p><strong>Seg. à sex.</strong> de 8:30 às 18:30</p>
+            <p><strong>Sábado</strong> de 9:00 às 14:00</p>
+            <p><strong>Domingo</strong> Fechado</p>
         </div>
 
         <div>
@@ -245,7 +263,7 @@
 
         <div>
             <p>Todos os direitos reservados - 2019 | Autor: Joelmir Rogério Carvalho</p>
-        </div>
+        </div> -->
     </footer>
 </body>
 </html>

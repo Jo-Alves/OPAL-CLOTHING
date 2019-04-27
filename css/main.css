@@ -4,6 +4,12 @@ body{
     font-family: "Open Sans", sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+*{
+    box-sizing: border-box;
 }
 
 ul{
@@ -12,6 +18,8 @@ ul{
 }
 a{
     text-decoration: none;
+    
+    display: inline-block;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -19,9 +27,6 @@ h1, h2, h3, h4, h5, h6{
     text-transform: uppercase;
 }
 
-.hImg{
-    display: none;
-}
 
 .h-logo{
     margin-left: 10px;
@@ -33,7 +38,8 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .header{
-    position: relative;
+    position: sticky;
+    border-bottom: 5px solid #7fcbc9;
 }
 .nav-menu{       
     padding: 0; 
@@ -55,23 +61,25 @@ h1, h2, h3, h4, h5, h6{
    
 }
 
-.nav-menu .menu .menu-list:first-child a{
-    color: #7fcbc9;
-}
-
 .nav-menu .menu .menu-list a{
     color: black;
+    font-weight: 600;
     transition: .5s ease;
     -webkit-transition: .51s ease;
     -moz-transition: .51s ease;
     -ms-transition: .51s ease;
     -o-transition: .51s ease;
+    padding: 5px;
 }
 
 .nav-menu .menu .menu-list a:hover{
     color: #7fcbc9;
 }
 
+.nav-menu .menu .menu-list a:focus{
+    
+    border: 1px dotted black;
+}
 .nav-menu .menu .menu-list:last-child{
     margin-top: 10px;
 }
@@ -95,18 +103,19 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .s-colecao .sd-colecao{
-    max-width: 90%;
+    width: 90%;
     margin: 30px auto;
-    padding: 100px 30px ;
+    padding: 80px 30px ;
     box-sizing: border-box;
     text-align: center;
 
 }
 
 .s-colecao  .sa-colecao{
-    width: 100%;
-    padding: 0 100px;
-    margin-left: -100px;
+    min-width: 120%;
+    padding: 10px 20px;
+    margin-left: -10%;
+    box-sizing: border-box;
     background-color: rgba(255, 255, 255, .7);
 }
 .s-colecao .sd-colecao:nth-child(1){
@@ -125,9 +134,10 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .dv-pro{
-    width: 80%;
+    width: 80%;    
     text-align: center;
     padding: 50px;    
+    margin: 0 auto;
 }
 
 .dv-pro p:first-child{
@@ -193,7 +203,7 @@ h1, h2, h3, h4, h5, h6{
     border: none;
     cursor: pointer;
 }
- span{
+ .sel{
     letter-spacing: 20px;
     width: 10px;
     height: 10px;
@@ -211,11 +221,19 @@ h1, h2, h3, h4, h5, h6{
     -o-transform: translateY(-50%);
 }
 
-.buttons span:nth-child(2):hover,
-.buttons span:nth-child(3):hover
+.buttons .sel:nth-child(2):hover,
+.buttons .sel:nth-child(3):hover
 {
   background-color: black;
   cursor: pointer;
+  animation: efeitos 1s ease 1;
+  -webkit-animation: efeitos 1s ease 1;
+}
+
+@keyframes efeitos{
+    from{
+        background-color: #999;
+    }
 }
 
 .btnT{
@@ -226,4 +244,165 @@ h1, h2, h3, h4, h5, h6{
     padding: 100px;
     text-align: center;
     box-sizing: border-box;
+}
+
+.s-ultnov{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 14px;
+    
+}
+
+.s-ultnov .btn{
+    padding: 10px 20px;
+    margin: 20px 0;
+}
+.sd-ultnov{
+    background: url(../image/inicio/produto-urbana-10.jpg) no-repeat;
+    background-size: 250%;
+    background-position: -100px -120px;
+    padding: 150px 20px;    
+    
+}
+
+
+.sa-ultnov{
+    text-align: justify;
+}
+
+.sa-ultnov h3:first-child{
+    margin-bottom: -15px;
+}
+
+.sa-ultnov hr{
+    width: 50px;
+    height: 2px;
+    background-color: black;
+    display: inline-block;
+    
+}
+
+.sa-ultnovd{
+    font-size: 12.5px;
+    text-align: center;
+    color: white;
+    background-color: rgba(127, 203, 201, .8);
+    padding: 20px 10px;
+    box-sizing: border-box;
+    border: 10px solid rgba(167, 233, 231, 0.8);
+     box-sizing: border-box;
+}
+
+.dv-ftd{
+    padding: 100px 20px;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../image/inicio/slide-01.jpg) no-repeat;
+    background-size: cover;
+    background-position-x: 30%;
+    color: white;
+    text-align: center;
+}
+
+.dv-slide{
+    margin: 40px auto;
+    width: 90%;
+    overflow: auto;
+    border-top: 1px dotted black;
+    border-bottom: 1px dotted black;
+}
+
+.dv-slideshow{
+    white-space: nowrap;
+}
+
+.dv-slideshow figure{
+    display: inline-block;
+}
+
+.dv-serv{
+    width: 100%;
+    text-align: center;
+    background-color: #bbf3f1;
+    padding: 90px 0;
+    font-size: 13px;
+}
+
+.dv-serv hr{
+    width: 50px;
+    height: 2px;
+    background-color: black;
+    display: inline-block;
+}
+
+.dv-servimg{
+    background-color: white;
+    width: 90%;
+    margin: 20px auto;
+    text-align: left;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dv-servimg div:last-child{
+    margin-left: 30px;
+}
+
+.footer{
+    background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url("../image/inicio/produto-urbana-03.jpg") no-repeat;
+    background-size: cover;
+    background-position-x: +80%;
+    padding: 10px 20px;
+    font-size: 13px;
+    border-top: 2px solid rgba(219, 67, 219, .5);
+}
+
+.footer .footer-logo a,
+.footer{
+    color: white;
+   
+}
+.footer .footer-logo a{
+    font-weight: 400;
+}
+footer div{
+    margin-bottom: 30px;
+}
+
+.footer div:nth-child(3) a{
+    color: #7fcbc9;
+}
+
+.footer div:nth-child(3) a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 681px){
+    .s-colecao{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .s-ultnov{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: -30px;
+        margin-bottom: 30px;
+    }
+
+    .sd-ultnov{
+        width: 70%;
+    }
+
+    .sa-ultnov{
+        margin-left: -150px;
+    }
+
+    .dv-servimgs{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

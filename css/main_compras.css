@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+fieldset{
+    padding: 30px;
+    width: 90%;
+    margin: 10px auto;
+}
+
+h1, h3{
+    margin-left: 5%;
+}
+
+input[type = "password"],
+input[type = "text"]{
+    display: block;
+    width: 90%;
+    height: 35px;
+    margin-bottom: 5px;
+}
+
+input[type = "checkbox"]{
+    display: inline;
+    margin-left: 5px;
+}
+
+fieldset a{
+    display: block;
+    margin-top: 5px;
+    color: rgb(230, 99, 230);
+}
+
+fieldset b{
+    color: red;
+}
+
+b{
+    font-size: 20px;
+}
+
+span{
+    display: inline-block;
+    border-top: 7px solid rgba(224, 69, 224, 0.671);
+    width: 90%;
+    margin: 15px 0px 0 5%;
+    position: relative;
+}
+
+span::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    top: -15px;
+    left: -01px;
+    background-color: black;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;  
+    background-color: rgba(224, 69, 224, 0.671); 
+    cursor: ew-resize     
+}
+
+span::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    top: -15px;
+    right: -01px;
+    background-color: black;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;   
+    background-color: rgba(224, 69, 224, 0.671); 
+    cursor: ew-resize
+}
+
+.form-compras{
+    background-color: rgb(231, 225, 225);
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.form-compras input{
+    display: block;
+}
+.form-compras input[type = "text"]{
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 681px){
+    .main-compras{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .main-compras .form-compras{
+        width: 20%;
+        margin-left: -10px;
+    }
+
+    .main-compras .dv-msg{
+        width: 80%;
+    }
+
+    input[type = "password"],
+    input[type = "text"]{
+        display: block;
+        width: 40%;        
+}
+
+}
