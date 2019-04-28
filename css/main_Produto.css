@@ -28,7 +28,7 @@ body{
     max-width: 100%;
     
 }
-span{
+.span{
     display: inline-block;
     border-top: 7px solid rgba(224, 69, 224, 0.671);
     width: 90%;
@@ -36,7 +36,7 @@ span{
     position: relative;
 }
 
-span::before{
+.span::before{
     content: "";
     width: 20px;
     height: 20px;
@@ -54,7 +54,7 @@ span::before{
     cursor: ew-resize     
 }
 
-span::after{
+.span::after{
     content: "";
     width: 20px;
     height: 20px;

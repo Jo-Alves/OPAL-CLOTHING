@@ -13,6 +13,27 @@ body{
     box-sizing: border-box;
 }
 
+.topo{
+    width: 40px;
+    height: 40px;
+    background-color: #7fcbc9;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%; 
+    z-index: 1;
+}
+
+@keyframes movTop{
+    from{
+        top: 30%;
+    }
+    to{
+        top: 50%;
+    }
+} 
+
 ul{
     margin: 0;
     list-style: none;
@@ -39,8 +60,8 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .header{
-    position: sticky;
-    border-bottom: 5px solid #7fcbc9;
+    border-bottom: 5px solid #7fcbc9;    
+    background: white;
 }
 .nav-menu{       
     padding: 0; 
@@ -193,12 +214,15 @@ h1, h2, h3, h4, h5, h6{
     background-color: #2baaa6ef;
 }
 
-.buttons{
+.buttons, .btnCarousel{
    text-align: center;
 }
 
 .buttons .prev,
-.buttons .next{
+.buttons .next,
+.btnCarousel .prev,
+.btnCarousel .next
+{
     font-size: 30px;
     background-color: transparent;
     border: none;
@@ -229,12 +253,6 @@ h1, h2, h3, h4, h5, h6{
   cursor: pointer;
   animation: efeitos 1s ease 1;
   -webkit-animation: efeitos 1s ease 1;
-}
-
-@keyframes efeitos{
-    from{
-        background-color: #999;
-    }
 }
 
 .btnT{
@@ -350,7 +368,6 @@ h1, h2, h3, h4, h5, h6{
     align-items: center;
 }
 
-<<<<<<< HEAD
 .dv-servimg div:last-child{
     margin-left: 30px;
 }
@@ -376,12 +393,98 @@ footer div{
     margin-bottom: 30px;
 }
 
-.footer div:nth-child(3) a{
+.footer div:nth-child(2) a{
     color: #7fcbc9;
 }
 
-.footer div:nth-child(3) a:hover{
+.footer div:nth-child(2) a:hover{
     text-decoration: underline;
+}
+
+.js .header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.js .btnMenu{
+    font-size: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    outline: none;
+}
+
+.js .btnMenu:focus{
+    border: 1px dotted black;
+}
+
+.js .dv-menuFlex{
+    width: 300px;
+    height: 120vh;
+    position: absolute;
+    right: -300px;
+    background-color: rgb(238, 226, 226);
+}
+
+.js .nav-menu{
+    position: relative;
+    top: 40px;
+}
+
+.js .menu-list{
+    display: block;
+}
+
+.js .menu-list:nth-of-type(2){
+     margin-top: 10px;
+}
+
+.js .btnFechar{
+    border:none;
+    background-color: transparent;
+    font-size: 20px;
+    padding: 0;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.js .btnFechar:focus{
+    border: 1px dotted black;
+}
+
+@keyframes rotDireita{
+    from{
+        transform: rotate(45deg)    ;
+        -webkit-transform: rotate(45deg)    ;
+        -moz-transform: rotate(45deg)    ;
+        -ms-transform: rotate(45deg)    ;
+        -o-transform: rotate(45deg)    ;
+}
+}
+
+@keyframes rotEsquerda{
+    from{
+        transform: rotate(-45deg)    ;
+        -webkit-transform: rotate(-45deg)    ;
+        -moz-transform: rotate(-45deg)    ;
+        -ms-transform: rotate(-45deg)    ;
+        -o-transform: rotate(-45deg)    ;
+}
 }
 
 @media screen and (min-width: 681px){
@@ -390,7 +493,7 @@ footer div{
         grid-template-columns: repeat(3, 1fr);
         width: 90%;
         margin: 0 auto;
-    }
+    }    
 
     .s-ultnov{
         display: grid;
@@ -411,7 +514,37 @@ footer div{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
-}
-.dv-servf div:last-child{
+
+    .dv-servf div:last-child{
     margin-left: 30px;
+    }
+
+    .footer div{      
+       display: inline-block;      
+    }
+
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 40px;
+        padding: 20px 120px;
+    }
+    .footer div:nth-child(2),
+    .footer div:nth-child(3),
+    .footer div:nth-child(4){      
+        margin-top: 80px;
+    }
+
+    .js .btnMenu{
+        display: none;
+    }
+
+    .js .dv-menuFlex{
+        display: block;
+        width: 300px;
+        height: 20vh;
+        position: absolute;
+        right: -300px;
+        background-color: rgb(238, 226, 226);
+    }
 }

@@ -11,28 +11,34 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/main_Produto.css">
+    <link rel="stylesheet" href="css/main_compras.css">
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Arquivo Produto - Opal Clothing</title>
 </head>
 <body>
-       <header class="header">
+       <header id="header" class="header">
         <img src="image/inicio/icone-envio.png" alt="Ícone de carro de entrega" class="hImg" style=" display: none;">
         <img src="image/inicio/icone-garantia.png" alt="Ícone de carro de entrega" class="hImg" style=" display: none;">
+        
+        <button class="btnMenu" style="display: none;"><i class="fas fa-bars"></i></button>
 
         <div class="hd-menu">
             <h1><a href="index.html" class="h-logo">Opal Cloting</a></h1>
     
-            <nav class="nav-menu">
-                <ul class="menu">
-                    <li class="menu-list"><a href="index.html">Início</a></li>
-                    <li class="menu-list"><a href="produtos.html" style="color: #7fcbc9">Produtos</a></li>
-                    <li class="menu-list"><a href="compras.html">Minha Conta</a></li>
-                </ul>
-            </nav>
+            <div class="dv-menuFlex">
+                    <button class="btnFechar" style="display: none;">X</button>
+                    <nav class="nav-menu">
+                        <ul class="menu">
+                            <li class="menu-list"><a href="index.html">Início</a></li>
+                            <li class="menu-list"><a href="produtos.html" style="color: #7fcbc9">Produtos</a></li>
+                            <li class="menu-list"><a href="compras.html">Minha Conta</a></li>
+                        </ul>
+                    </nav>
+                </div>
         </div>
     </header>
-            <a href="#header"></a>
+
     <main class="main">
         
 
@@ -165,24 +171,21 @@
         <div class="form">
         <h5>Buscar produtos</h5>
         <input type="text" id="Text" placeholder="Categorias de produto">
-        <span></span>
+        <span class="span"></span>
         <p>Preço: R$ 25,00 __ R$ 200,00</p>
         <a href="#" class="btn">Aplicar</a>       
     </div>
 
        </main>
 
-    <footer class="footer">
-        <div class="footer-logo">
+       <footer class="footer">
+        <div class="footer-logo">           
                <h1><a href="index.html">Opal Cloting</a></h1>
+               <h5>UMA MENSAGEM</h5>
+               <p>Mauris porttitor nulla nunc, sit amet interdum sapien efficitur sed. Fusce viverra eros massa. Curabitur hendrerit risus vitae interdum rhoncus. Aenean vel nisi convallis enim vehicula venenatis.</p>
        </div>   
 
-       <div>
-           <h5>UMA MENSAGEM</h5>
-           <p>Mauris porttitor nulla nunc, sit amet interdum sapien efficitur sed. Fusce viverra eros massa. Curabitur hendrerit risus vitae interdum rhoncus. Aenean vel nisi convallis enim vehicula venenatis.</p>
-       <div>
-
-       <div>
+        <div>
            <h5>Obtenha mais para seu negócio</h5>
            <p><a href="#">Início</a></p>
            <p><a href="#">Produtos</a></p>
@@ -211,5 +214,9 @@
            <p>Todos os direitos reservados - 2019 | Autor: Joelmir Rogério Carvalho</p>
        </div>
    </footer>
+
+   
+   <script src="js/config-menu.js"></script>
+   <script src="js/main.js"></script>
 </body>
 </html>
