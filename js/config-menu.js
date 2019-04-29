@@ -59,6 +59,7 @@ function Menu(Atributos){
         _this.body.style.transform = "translateX(0)";
         _this.body.style.transition = ".3s ease";
         _this.body.style.overflowY = "auto";
+        _this.body.style.overflowX = "hidden";
         
         //_this.navMenu.style.display = "none";
         // _this.navMenu.style.transition = "width .5s ease";

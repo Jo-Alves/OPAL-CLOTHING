@@ -24,6 +24,10 @@ body{
     grid-template-columns: repeat(2, 1fr);  
 }
 
+.prod p:nth-of-type(2){
+    color: #7fcbc9;
+}
+
 .prod article figure img{
     max-width: 100%;
     

@@ -25,6 +25,10 @@ body{
     z-index: 1;
 }
 
+.icones{
+    margin: 10px;
+}
+
 @keyframes movTop{
     from{
         top: 30%;
@@ -110,6 +114,13 @@ h1, h2, h3, h4, h5, h6{
    width: 100%;
    object-fit: contain;
    overflow-y: hidden;
+   position: relative;
+}
+
+.btnCarousel{
+    position: fixed;
+    bottom: 40px;
+    left: 50%;
 }
 
 .carousel .carousel-slide figure img{
@@ -167,7 +178,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .dv-pro p{
-    font-size: 15.5px;
+    font-size: 15.5px;    
 }
 
 .dv-pro hr{
@@ -185,6 +196,9 @@ h1, h2, h3, h4, h5, h6{
     grid-gap: 20px;
     overflow: auto;
     position: relative;
+}
+.s-prod p{
+    color: #7fcbc9;
 }
 
 .s-prod h3{
@@ -208,13 +222,18 @@ h1, h2, h3, h4, h5, h6{
     color: white;
     text-transform: uppercase;
     font-size: 14px;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -ms-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
 }
 
 .btn:hover{
     background-color: #2baaa6ef;
 }
 
-.buttons, .btnCarousel{
+.buttons{
    text-align: center;
 }
 
@@ -227,6 +246,12 @@ h1, h2, h3, h4, h5, h6{
     background-color: transparent;
     border: none;
     cursor: pointer;
+    outline: none;
+}
+
+.bt:focus{
+    border: 1px dotted black;
+    padding: 0 2px;
 }
  .sel{
     letter-spacing: 20px;
@@ -244,15 +269,17 @@ h1, h2, h3, h4, h5, h6{
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -ms-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
 }
 
-.buttons .sel:nth-child(2):hover,
-.buttons .sel:nth-child(3):hover
+.sel:hover
 {
   background-color: black;
   cursor: pointer;
-  animation: efeitos 1s ease 1;
-  -webkit-animation: efeitos 1s ease 1;
 }
 
 .btnT{
@@ -401,6 +428,10 @@ footer div{
     text-decoration: underline;
 }
 
+.js{
+    overflow-x: hidden;
+}
+
 .js .header{
     position: sticky;
     top: 0;
@@ -488,12 +519,21 @@ footer div{
 }
 
 @media screen and (min-width: 681px){
+   
+   
     .s-colecao{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         width: 90%;
         margin: 0 auto;
-    }    
+    }  
+
+    .carousel,
+    .s-prod,
+    .dv-slideshow
+    {
+        overflow: hidden;
+    }  
 
     .s-ultnov{
         display: grid;
@@ -507,7 +547,7 @@ footer div{
     }
 
     .sa-ultnov{
-        margin-left: -150px;
+        margin-left: -25%;
     }
 
     .dv-servimgs{
