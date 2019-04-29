@@ -1,7 +1,7 @@
 function Carousel(attribute){
     this.container = (typeof attribute.container === 'string') ? document.querySelector(attribute.container) : attribute.container;
 
-    this.itens = (typeof attribute.itens === "string") ? this.container.querySelector(attribute.itens) : attribute.itens;
+    this.itens = (typeof attribute.itens === "string") ? this.container.querySelectorAll(attribute.itens) : attribute.itens;
 
     this.btSel1 = (typeof attribute.btSel1 === "string") ? document.querySelector(attribute.btSel1) : attribute.btSel1;
 
@@ -16,4 +16,6 @@ function Carousel(attribute){
     this.btnNext = (typeof attribute.btnNext === "string") ? document.querySelector(attribute.btnNext) : attribute.btnNext;
 
     var _this = this;
-}
+
+    
+ }

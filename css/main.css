@@ -26,7 +26,8 @@ body{
 }
 
 .icones{
-    margin: 10px;
+    display: none;
+    margin: 20px 20px 0;
 }
 
 @keyframes movTop{
@@ -498,6 +499,18 @@ footer div{
     border: 1px dotted black;
 }
 
+.js .icones-menu{
+    display: block;
+    position: absolute;
+    top: 200px;
+    left: 10%;
+}
+
+.js .icones-menu img:nth-of-type(2){
+    display: block;
+    margin-top: 20px;
+}
+
 @keyframes rotDireita{
     from{
         transform: rotate(45deg)    ;
@@ -519,7 +532,6 @@ footer div{
 }
 
 @media screen and (min-width: 681px){
-   
    
     .s-colecao{
         display: grid;
@@ -601,4 +613,11 @@ footer div{
         top: -40px;
     }
 
+    .js .icones{
+        display: block;
+    }
+
+    .js .icones-menu{
+        left: 30%;
+    }
 }
