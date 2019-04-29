@@ -13,6 +13,7 @@ function Menu(Atributos){
     
     this.Menu = (typeof Atributos.Menu === 'string' ) ?
                 document.querySelector(Atributos.Menu) : Atributos.Menu;
+                
     
     this.min_width = Atributos.min_width;
 
@@ -31,9 +32,19 @@ function Menu(Atributos){
 });
 
     function MostrarMenu(){
+        // this.navMenu.style.display = "none";
+        // _this.navMenu.style.width = '300px';
+        // _this.navMenu.style.height = '120vh';
+        // _this.navMenu.style.position = 'absolute';
+        // _this.navMenu.style.right = '-300px';
+        // _this.navMenu.style.backgroundColor = "rgb(238, 226, 226)";
+
+
+
         _this.body.style.transform = "translateX(-300px)";
         _this.body.style.transition = ".5s ease";
         _this.body.style.overflowY = "hidden";
+        // _this.navMenu.style.display = "none";
         
         _this.navMenu.style.display = "block";
         _this.navMenu.style.transition = "width .5s ease";
@@ -49,10 +60,14 @@ function Menu(Atributos){
         _this.body.style.transition = ".3s ease";
         _this.body.style.overflowY = "auto";
         
-        _this.navMenu.style.display = "none";
-        _this.navMenu.style.transition = "width .5s ease";
+        //_this.navMenu.style.display = "none";
+        // _this.navMenu.style.transition = "width .5s ease";
 
-        _this.btnFechar.style.display = "none";
-        _this.Menu.style.display = "none";
+        // _this.btnFechar.style.display = "none";
+        // _this.Menu.style.display = "none";
     }
+
+    addEventListener("resize", function(){
+        FecharMenu();
+    });
 }

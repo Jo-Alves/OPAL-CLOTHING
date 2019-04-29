@@ -541,10 +541,24 @@ footer div{
 
     .js .dv-menuFlex{
         display: block;
-        width: 300px;
-        height: 20vh;
+        width: 20%;
+        height: 14vh;
         position: absolute;
-        right: -300px;
-        background-color: rgb(238, 226, 226);
+        right: -200px;
+        background-color: transparent;
     }
+
+    .btnFechar{
+        display: none;
+    }
+
+   
+    .js .menu{
+        width: 400px;
+        margin-left: 20px;
+        display: inline-block;
+        position: absolute;
+        top: -40px;
+    }
+
 }

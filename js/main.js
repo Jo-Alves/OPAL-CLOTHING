@@ -9,7 +9,17 @@
         navMenu: ".js .dv-menuFlex",
         Menu: ".nav-menu",
         min_width: 681
-    })
+    });
 
+    var corousel = new Carousel({
+        container: ".carousel-slide",
+        itens: ".figure",
+        btSel1: ".sel1",
+        btSel2: ".sel2",
+        btSel3: ".sel3",
+        btSel4: ".sel4",
+        btnPrev: ".prev",
+        btnNext: ".next"
+    });
 
 })()
