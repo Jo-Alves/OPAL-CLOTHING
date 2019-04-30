@@ -13,13 +13,15 @@
 
     var corousel = new Carousel({
         container: ".carousel-slide",
-        itens: ".figure",
+        itens: "figure",
+        img: ".fig-carousel img",
         btSel1: ".sel1",
         btSel2: ".sel2",
         btSel3: ".sel3",
         btSel4: ".sel4",
         btnPrev: ".prev",
-        btnNext: ".next"
+        btnNext: ".next",
+        btnCarousel: ".btnCarousel"
     });
 
 })()

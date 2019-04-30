@@ -26,8 +26,11 @@ body{
 }
 
 .icones{
-    display: none;
     margin: 20px 20px 0;
+}
+
+.icones, .icones-menu{
+    display: none;
 }
 
 @keyframes movTop{
@@ -114,15 +117,17 @@ h1, h2, h3, h4, h5, h6{
 .carousel{
    width: 100%;
    object-fit: contain;
-   overflow-y: hidden;
    position: relative;
 }
 
 .btnCarousel{
+    display: none;
     position: fixed;
     bottom: 40px;
     left: 50%;
 }
+
+
 
 .carousel .carousel-slide figure img{
     width: 100%;
@@ -130,12 +135,17 @@ h1, h2, h3, h4, h5, h6{
 
 .carousel .carousel-slide{
     white-space: nowrap;
+    
 }
 
 .carousel .carousel-slide figure{
     display: inline-block;
+    width: 100%;
+    margin-left: 0px;
 }
-
+.carousel .carousel-slide .fig-carousel{
+    display: none;
+}
 .s-colecao .sd-colecao{
     width: 90%;
     margin: 30px auto;
@@ -381,8 +391,6 @@ h1, h2, h3, h4, h5, h6{
     display: inline-block;
 }
 
-
-
 .dv-servf{
 
     background-color: white;
@@ -439,6 +447,29 @@ footer div{
     left: 0;
     width: 100%;
     z-index: 1;
+}
+
+.js .btnCarousel{
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+}
+
+.js  .carousel,
+.js .s-prod,
+.js .dv-slideshow
+{
+    overflow: hidden;
+}  
+
+
+.js .carousel-slide figure{
+    display: none;
+}
+
+.js .carousel-slide .fig-carousel{
+    display: block;
 }
 
 .js .btnMenu{
@@ -544,7 +575,7 @@ footer div{
     .s-prod,
     .dv-slideshow
     {
-        overflow: hidden;
+        overflow: auto;
     }  
 
     .s-ultnov{
